@@ -1,13 +1,28 @@
 Package: rmdGrading
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Insert grading comments into an RMarkdown or Quarto document
 Version: 0.1.0
-Authors@R: person(given = "Jonathan M."family = "Gilligan",
-email = "jonathan.gilligan@vanderbilt.edu",
-comment = c(ORCID = "0000-0003-1375-6686"),
-role = c("cre", "aut"))
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: person(
+  given = "Jonathan", 
+  family = "Gilligan",
+  email = "jonathan.gilligan@vanderbilt.edu",
+  comment = c(ORCID = "0000-0003-1375-6686"),
+  role = c("cre", "aut")
+  )
+Description: Inserts "`::: {.comment}`" divs into an RMarkdown document 
+  to add comments when grading an assignment and inserts
+  R code blocks with `grade-src`, `grade-out`, `grade-msg`, 
+  `grade-warn`, and `grade-err` classes.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends:
+    R (>= 4.3.0)
+Imports:
+    rstudioapi (>= 0.17.0),
+    rprojroot (>= 2.0.0),
+    stringr (>= 1.5.0)
+URL: https://github.com/jonathan-g/rmdGrading
+BugReports: https://github.com/jonathan-g/rmdGrading/issues
+RoxygenNote: 7.3.2
+Roxygen: list(markdown = TRUE)

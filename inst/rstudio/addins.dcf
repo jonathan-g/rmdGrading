@@ -1,0 +1,23 @@
+Name: Insert grade comment
+Description: Inserts Markdown div with a ".comment" class
+Binding: insertGradeCommentAddin
+Interactive: false
+
+Name: Insert grade code block
+Description: Inserts Markdown R code block with grading classes
+  for source, output, messages, warnings, and errors.
+Binding: insertGradeCodeBlockAddin
+Interactive: false
+
+Name: Insert YAML CSS block
+Description: Insert YAML format block to include grading.css
+  in HTML output
+Binding: insertGradeCSSBlockAddin
+Interactive: false
+
+
+Name: Setup grading CSS
+Description: Sets up grading.css file to style HTML output for
+  grading.
+Binding: setupGradeCSSAddin
+Interactive: false
