@@ -1,0 +1,13 @@
+Package: rmdGrading
+Type: Package
+Title: What the Package Does (Title Case)
+Version: 0.1.0
+Authors@R: person(given = "Jonathan M."family = "Gilligan",
+email = "jonathan.gilligan@vanderbilt.edu",
+comment = c(ORCID = "0000-0003-1375-6686"),
+role = c("cre", "aut"))
+Description: More about what it does (maybe more than one line).
+    Continuation lines should be indented.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
