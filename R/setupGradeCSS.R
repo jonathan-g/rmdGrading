@@ -21,7 +21,7 @@ insertGradeCSSBlockAddin <- function() {
       "",
       "format:",
       "  html:",
-      "  css: \"css/grading.css\"",
+      "    css: \"css/grading.css\"",
       "",
       sep = "\n"
     ),
@@ -74,8 +74,8 @@ copy_css_files <- function(root = NULL, overwrite = FALSE) {
                                 full.names = FALSE,
                                 no.. = TRUE)
         for (s in src_files) {
-          base <- basename(s)
-          base_t <- file.path(css_dir, base)
+          dir <- dirname(s)
+          base_t <- file.path(css_dir, dir)
           if (! dir.exists(base_t)) {
             dir.create(base_t)
           }

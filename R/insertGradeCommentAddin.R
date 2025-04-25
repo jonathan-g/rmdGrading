@@ -20,11 +20,12 @@ insertGradeCommentAddin <- function() {
     text = paste(
       "",
       "::: {.comment}",
+      "",
       ":::",
       "",
       sep = "\n"
     ),
     id = doc$id
   )
-  rstudioapi::setCursorPosition(c(row + 3, 1), id = doc$id)
+  rstudioapi::setCursorPosition(c(row + 2, 1), id = doc$id)
 }

@@ -8,7 +8,7 @@
 #'
 #' @export
 #'
-insertGradeCommentAddin <- function() {
+insertGradeCodeBlockAddin <- function() {
   doc <- rstudioapi::getSourceEditorContext()
   row <- rstudioapi::primary_selection(doc)$range$start['row']
   col <- rstudioapi::primary_selection(doc)$range$start['column']
@@ -23,11 +23,11 @@ insertGradeCommentAddin <- function() {
     text = paste(
       "",
       "```{r }",
-      "#| class.source: \"grade-src\"",
-      "#| class.output: \"grade-out\"",
+      "#| class.source:  \"grade-src\"",
+      "#| class.output:  \"grade-out\"",
       "#| class.message: \"grade-msg\"",
       "#| class.warning: \"grade-warn\"",
-      "#| class.error: \"grade-err\"",
+      "#| class.error:   \"grade-err\"",
       "",
       "```",
       "",
@@ -35,5 +35,5 @@ insertGradeCommentAddin <- function() {
     ),
     id = doc$id
   )
-  rstudioapi::setCursorPosition(c(row + 8, 1), id = doc$id)
+  rstudioapi::setCursorPosition(c(row + 7, 1), id = doc$id)
 }

@@ -1,7 +1,7 @@
 div.comment {
-  border: 2px solid #800000;
+  border: 2px solid #000080;
   padding: 10px;
-  background-color: #FFF0F0;
+  background-color: #F0F0FF;
 }
 
 .comment div,
@@ -9,17 +9,32 @@ div.comment {
 .comment ul li,
 .comment ol li,
 .comment blockquote {
+  color: #0000A0;
+}
+
+div.comment.problem {
+  border: 2px solid #800000;
+  padding: 10px;
+  background-color: #FFF0F0;
+}
+
+.comment.problem div,
+.comment.problem p,
+.comment.problem ul li,
+.comment.problem ol li,
+.comment.problem blockquote {
   color: #A00000;
 }
 
+
 pre.grade-src {
-  border: 2px solid rgba(40, 0, 0, 1.0);
-  background-color: rgba(255,245,240,0.50);
+  border: 2px solid rgba(0, 0, 40, 1.0);
+  background-color: rgba(245,240,255,0.50);
 }
 
 pre.grade-out {
   border: 1px solid rgba(0, 00, 0, 0.65);
-  background-color: rgba(255,255,200,0.50);
+  background-color: rgba(245,200,255,0.50);
 }
 
 pre.grade-msg {
