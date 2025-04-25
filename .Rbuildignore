@@ -4,3 +4,4 @@
 ^LICENSE\.md$
 ^LICENSE\.rmd$
 ^\.Rproj\.user$
+\.bak$

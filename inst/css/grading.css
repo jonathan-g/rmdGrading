@@ -8,7 +8,12 @@ div.comment {
 .comment p,
 .comment ul li,
 .comment ol li,
-.comment blockquote {
+.comment blockquote,
+.comment h1,
+.comment h2,
+.comment h3,
+.comment h4,
+.comment h5 {
   color: #0000A0;
 }
 
@@ -22,7 +27,12 @@ div.comment.problem {
 .comment.problem p,
 .comment.problem ul li,
 .comment.problem ol li,
-.comment.problem blockquote {
+.comment.problem blockquote,
+.comment.problem h1,
+.comment.problem h2,
+.comment.problem h3,
+.comment.problem h4,
+.comment.problem h5 {
   color: #A00000;
 }
 
