@@ -1,3 +1,4 @@
+section.comment,
 div.comment {
   border: 2px solid #000080;
   padding: 10px;
@@ -17,6 +18,7 @@ div.comment {
   color: #0000A0;
 }
 
+section.comment.problem,
 div.comment.problem {
   border: 2px solid #800000;
   padding: 10px;
@@ -33,7 +35,7 @@ div.comment.problem {
 .comment.problem h3,
 .comment.problem h4,
 .comment.problem h5 {
-  color: #A00000;
+  color: #800000;
 }
 
 
@@ -44,7 +46,7 @@ pre.grade-src {
 
 pre.grade-out {
   border: 1px solid rgba(0, 00, 0, 0.65);
-  background-color: rgba(245,200,255,0.50);
+  background-color: rgba(200,240,255,0.50);
 }
 
 pre.grade-msg {
@@ -62,5 +64,16 @@ pre.grade-err {
   border: 2px solid rgba(96, 0, 0, 1);
   background-color: rgba(255,255,0,0.7);
   color: #800000;
+}
+
+.problem pre.grade-src {
+  border: 2px solid rgba(40, 0, 0, 1.0);
+  background-color: rgba(255,245,240,0.50);
+}
+
+
+.problem pre.grade-out {
+  border: 1px solid rgba(0, 00, 0, 0.65);
+  background-color: rgba(255,200,220,0.50);
 }
 
